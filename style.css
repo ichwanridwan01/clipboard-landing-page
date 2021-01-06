@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container .main-content .content-header {
+  background-image: url(/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .main-content .content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .main-content .content-header img,
+h1 {
+  margin-top: 50px;
+}
+
+.container .main-content .content-header img {
+  max-width: 100px;
+}
+
+.container .main-content .content-header p {
+  margin-top: 10px;
+  width: 500px;
+  color: hsl(201, 11%, 66%);
+}
+
+.container .main-content .content-header form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  gap: 10%;
+  margin-bottom: 20px;
+}
+
+.container .main-content .content-header button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.container .main-content .content-header button.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.container .main-content .content-header button.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.container .main-content .content-header h2 {
+  margin-top: 60px;
+}
+
+.container .main-content .content-feature {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "img img content content";
+}
+
+.container .main-content .content-feature .content .image {
+  grid-area: img;
+  max-width: 700px;
+}
+
+.container .main-content .content-feature .content {
+  grid-area: content;
+}
+
+.container .main-content .content-feature .content p {
+  width: 300px;
+  padding-top: 10px;
+  color: hsl(201, 11%, 66%);
+}
+
+.container .main-content .content-feature .content h3 {
+  padding-top: 50px;
+}
+
+.container .main-content .content-access {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .main-content .content-access p {
+  width: 450px;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+}
+
+.container .main-content .content-access img {
+  margin-top: 100px;
+  max-width: 700px;
+}
+
+.container .main-content .content-supercharge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .main-content .content-supercharge p {
+  padding-top: 20px;
+  color: hsl(201, 11%, 66%);
+}
+
+.container .main-content .content-supercharge .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container .main-content .content-supercharge .logo p {
+  width: 300px;
+}
+
+.container .main-content .content-supercharge .brand {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 100px;
+  padding-top: 100px;
+}
+
+.container .main-content .content-supercharge .brand img {
+  max-width: 300px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.container .main-content .content-supercharge .brand img:hover {
+  opacity: 1;
+}
+
+.container .main-content .content-supercharge .clip {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .main-content .content-supercharge .clip p {
+  text-align: center;
+  width: 500px;
+}
+
+.container .main-content .content-supercharge button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.container .main-content .content-supercharge button.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.container .main-content .content-supercharge button.mac {
+  background-color: hsl(233, 100%, 69%);
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: hsl(0, 0%, 87%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+footer img {
+  max-width: 100px;
+}
+
+footer ul {
+  list-style: none;
+  color: hsl(201, 11%, 66%);
+}
+
+/* ! Responsive BreakPoint */
+
+@media (max-width: 500px) {
+  .container .main-content .content-header {
+    background-image: url(/images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container .main-content .content-header h1 {
+    width: 300px;
+  }
+  .container .main-content .content-header p {
+    width: 300px;
+  }
+
+  .container .main-content .content-header form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container .main-content .content-header form button {
+    width: 300px;
+  }
+
+  .container .main-content .content-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .main-content .content-feature img {
+    max-width: 300px;
+  }
+
+  .container .main-content .content-access h2 {
+    width: 200px;
+    text-align: center;
+  }
+
+  .container .main-content .content-access p {
+    width: 400px;
+  }
+
+  .container .main-content .content-access img {
+    max-width: 300px;
+  }
+
+  .container .main-content .content-supercharge .logo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container .main-content .content-supercharge .brand {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container .main-content .content-supercharge .clip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .main-content .content-supercharge .clip h1 {
+    width: 250px;
+    text-align: center;
+  }
+
+  .container .main-content .content-supercharge .clip p {
+    width: 250px;
+  }
+
+  .container .main-content .content-supercharge .clip form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container .main-content .content-supercharge .clip form button {
+    width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer img,
+  ul {
+    padding: 40px;
+  }
+
+  footer ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .main-content .content-feature .image img {
+    max-width: 400px;
+  }
+
+  .container .main-content .content-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .main-content .content-access img {
+    max-width: 400px;
+  }
+
+  .container .main-content .content-supercharge .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .container .main-content .content-supercharge .brand {
+    display: flex;
+    flex-direction: column;
+  }
+}
