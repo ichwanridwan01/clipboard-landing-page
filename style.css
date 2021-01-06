@@ -231,7 +231,7 @@ footer ul {
   }
 
   .container .main-content .content-feature img {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .container .main-content .content-access h2 {
@@ -240,11 +240,11 @@ footer ul {
   }
 
   .container .main-content .content-access p {
-    width: 400px;
+    width: 300px;
   }
 
   .container .main-content .content-access img {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .container .main-content .content-supercharge .logo {
@@ -297,7 +297,7 @@ footer ul {
 
 @media (max-width: 768px) {
   .container .main-content .content-feature .image img {
-    max-width: 400px;
+    max-width: 250px;
   }
 
   .container .main-content .content-feature {
@@ -307,7 +307,7 @@ footer ul {
   }
 
   .container .main-content .content-access img {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   .container .main-content .content-supercharge .logo {
